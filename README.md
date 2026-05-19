@@ -1,4 +1,4 @@
-# Berserk Fitness — E-commerce Estático
+# LEGEND Fitness — E-commerce Estático
 
 E-commerce fitness moderno, responsivo e funcional desenvolvido com HTML, CSS e JavaScript puro (ES Modules). Sem frameworks, sem dependências externas.
 
