@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEGEND — Performance Sem Limites</title>
+  <meta name="description" content="Roupas fitness de alta performance. Compressão, conforto e estilo para seus treinos mais intensos.">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body data-page="home">
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="./index.html" class="header__logo">
+          LEGEND<span class="logo-dot"></span>
+        </a>
+        <nav class="nav">
+          <a href="./index.html" class="active">Início</a>
+          <a href="./index.html#promocoes">Promoções</a>
+          <a href="./index.html#acessorios">Acessórios</a>
+          <a href="./pages/about.html">Sobre</a>
+          <a href="./pages/contact.html">Contato</a>
+        </nav>
+        <div class="header__actions">
+          <button class="btn-icon" id="search-btn" aria-label="Buscar">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+            </svg>
+          </button>
+          <a href="./cart.html" class="btn-icon" aria-label="Carrinho">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 001.99 1.61h9.72a2 2 0 001.99-1.61L23 6H6"/>
+            </svg>
+            <span class="cart-badge" aria-label="Itens no carrinho">0</span>
+          </a>
+          <button class="header__hamburger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <nav class="mobile-menu">
+    <div class="mobile-menu__links">
+      <a href="./index.html">Início</a>
+      <a href="./index.html#promocoes">Promoções</a>
+      <a href="./index.html#acessorios">Acessórios</a>
+      <a href="./cart.html">Carrinho</a>
+      <a href="./pages/about.html">Sobre</a>
+      <a href="./pages/contact.html">Contato</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-label="Banner principal">
+      <img
+        class="hero__bg-img"
+        src="https://images.pexels.com/photos/2294361/pexels-photo-2294361.jpeg?auto=compress&cs=tinysrgb&w=1400&h=900&fit=crop"
+        alt="Atleta Legend em treino"
+      >
+      <div class="hero__overlay"></div>
+      <div class="container">
+        <div class="hero__inner">
+          <span class="hero__label">Nova Coleção 2025</span>
+          <h1 class="hero__title">
+            SEJA<br>UMA<br><em>LENDA</em>
+          </h1>
+          <p class="hero__desc">
+            Roupas fitness de alta performance desenvolvidas para atletas que não conhecem limites. Tecnologia, compressão e estilo em cada detalhe.
+          </p>
+          <div class="hero__actions">
+            <a href="#produtos" class="btn btn-primary btn-lg">Ver Coleção</a>
+            <a href="./pages/about.html" class="btn btn-outline btn-lg">Nossa História</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TRUST BAR ===== -->
+    <section class="trust-bar section-sm" aria-label="Diferenciais">
+      <div class="container">
+        <div class="trust-bar__inner">
+          <div class="trust-item">
+            <div class="trust-item__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                <circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+              </svg>
+            </div>
+            <div>
+              <div class="trust-item__title">Frete Grátis</div>
+              <div class="trust-item__desc">Pedidos acima de R$ 299</div>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-item__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+              </svg>
+            </div>
+            <div>
+              <div class="trust-item__title">Produtos de Qualidade</div>
+              <div class="trust-item__desc">Tecnologia premium</div>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-item__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/>
+              </svg>
+            </div>
+            <div>
+              <div class="trust-item__title">Rastreável</div>
+              <div class="trust-item__desc">Código de rastreio garantido</div>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-item__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.2 2 2 0 012.22 0h3a2 2 0 012 1.72 12.05 12.05 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.05 12.05 0 002.81.7A2 2 0 0122 16.92z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="trust-item__title">Atendimento 24h</div>
+              <div class="trust-item__desc">Suporte via WhatsApp</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROMO BANNER ===== -->
+    <section class="promo-banner" id="promocoes" aria-label="Promoção">
+      <div class="container">
+        <div class="promo-banner__inner">
+          <div>
+            <h2 class="promo-banner__title">PROMOÇÃO</h2>
+            <p class="promo-banner__sub">
+              <strong>20% OFF</strong> — Válido para membros Legend Plus
+            </p>
+          </div>
+          <a href="#produtos" class="btn btn-outline btn-lg">
+            Ver Promoções
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px">
+              <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED ROW (Camisas Oversized + Calça Legging) ===== -->
+    <section class="featured-row" aria-label="Produtos em destaque">
+      <div class="container">
+        <div class="featured-row__inner">
+          <a href="./product.html?id=7" class="featured-item">
+            <img
+              class="featured-item__img"
+              src="https://images.pexels.com/photos/3622608/pexels-photo-3622608.jpeg?auto=compress&cs=tinysrgb&w=220&h=280&fit=crop"
+              alt="Camisas Oversized"
+            >
+            <div>
+              <div class="featured-item__cat">Camisetas</div>
+              <div class="featured-item__name">Camisas Oversized</div>
+              <div class="featured-item__desc">Estilo urbano com conforto máximo. Algodão premium, lavagem acid-wash e logo bordado Legend.</div>
+              <span class="featured-item__link">
+                Saiba mais
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </span>
+            </div>
+          </a>
+          <a href="./product.html?id=2" class="featured-item">
+            <img
+              class="featured-item__img"
+              src="https://images.pexels.com/photos/3822906/pexels-photo-3822906.jpeg?auto=compress&cs=tinysrgb&w=220&h=280&fit=crop"
+              alt="Calça Legging"
+            >
+            <div>
+              <div class="featured-item__cat">Leggings</div>
+              <div class="featured-item__name">Calça Legging</div>
+              <div class="featured-item__desc">Conforto e suporte para os treinos mais intensos. Cintura alta, sculpt 4D e bolso lateral.</div>
+              <span class="featured-item__link">
+                Saiba mais
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TÊNIS ESPORTIVO DESTAQUE (product hero) ===== -->
+    <section class="product-hero" aria-label="Produto em destaque">
+      <div class="container">
+        <div class="product-hero__inner">
+          <div class="product-hero__img-wrap">
+            <img
+              class="product-hero__img"
+              src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=700&h=875&fit=crop"
+              alt="Camisa Compressão Térmica Pro Legend"
+            >
+            <span class="product-hero__badge">Mais Vendida</span>
+          </div>
+          <div class="product-hero__content">
+            <div class="product-hero__cat">Camisetas • Legend Collection</div>
+            <h2 class="product-hero__name">Camisa Compressão<br>Térmica Pro</h2>
+            <p class="product-hero__desc">
+              Performance de elite para treinos de alta intensidade. Tecnologia de compressão muscular, proteção UV50+ e tecido dry-fit com secagem ultra-rápida. Desenvolvida com atletas profissionais para maximizar seu desempenho e conforto.
+            </p>
+            <div class="product-hero__price">
+              <span class="product-hero__price-main">R$ 199,90</span>
+              <span class="product-hero__price-old">R$ 259,90</span>
+            </div>
+            <div class="product-hero__actions">
+              <button class="btn btn-primary btn-lg" onclick="CartModule.addItem(1); this.textContent='✓ Adicionado'; this.style.background='#1a6e38'; setTimeout(()=>{this.textContent='Adicionar ao Carrinho';this.style.background='';},2000)">
+                Adicionar ao Carrinho
+              </button>
+              <a href="./product.html?id=1" class="btn btn-outline btn-lg">Ver Detalhes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ACCESSORIES ===== -->
+    <section class="accessories section" id="acessorios" aria-label="Acessórios">
+      <div class="container">
+        <div class="section__header">
+          <div>
+            <div class="section__tag">Complementos</div>
+            <h2 class="section__title">ACESSÓRIOS</h2>
+          </div>
+          <a href="#produtos" class="btn btn-ghost">
+            Ver todos
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px">
+              <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+        </div>
+        <div class="accessories__grid" id="accessories-grid">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ANNIVERSARY PROMO ===== -->
+    <section class="anniversary section" aria-label="Promoção de aniversário">
+      <div class="container">
+        <div class="anniversary__inner">
+          <div class="anniversary__content">
+            <div class="section__tag" style="margin-bottom:12px">Oferta Especial</div>
+            <h2 class="anniversary__title">
+              PROMOÇÃO DE<br>ANIVERSÁRIO DA<br><em>LEGEND</em>
+            </h2>
+            <p class="anniversary__desc">
+              A Legend está completando 5 anos de história no fitness brasileiro. Para celebrar, preparamos ofertas imperdíveis em todos os produtos. Compre com condições especiais e aproveite descontos de até 40% por tempo limitado.
+            </p>
+            <div class="countdown" id="countdown">
+              <div class="countdown__item">
+                <span class="countdown__num" id="cd-days">05</span>
+                <div class="countdown__lbl">Dias</div>
+              </div>
+              <div class="countdown__item">
+                <span class="countdown__num" id="cd-hours">12</span>
+                <div class="countdown__lbl">Horas</div>
+              </div>
+              <div class="countdown__item">
+                <span class="countdown__num" id="cd-mins">45</span>
+                <div class="countdown__lbl">Min</div>
+              </div>
+              <div class="countdown__item">
+                <span class="countdown__num" id="cd-secs">30</span>
+                <div class="countdown__lbl">Seg</div>
+              </div>
+            </div>
+            <a href="#produtos" class="btn btn-primary btn-lg">
+              Aproveitar Agora
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px">
+                <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+          </div>
+          <div style="position:relative;overflow:hidden">
+            <img
+              class="anniversary__img"
+              src="https://images.pexels.com/photos/5384538/pexels-photo-5384538.jpeg?auto=compress&cs=tinysrgb&w=600&h=440&fit=crop"
+              alt="Atleta Legend"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRODUCTS ===== -->
+    <section class="products section" id="produtos" aria-label="Catálogo de produtos">
+      <div class="container">
+        <div class="section__header">
+          <div>
+            <div class="section__tag">Catálogo</div>
+            <h2 class="section__title">NOSSOS <em>PRODUTOS</em></h2>
+          </div>
+        </div>
+        <div class="products__filters" id="product-filters" role="group" aria-label="Filtrar produtos">
+          <!-- JS -->
+        </div>
+        <div class="products__grid" id="products-grid" aria-label="Grade de produtos">
+          <!-- JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="newsletter" aria-label="Newsletter">
+      <div class="container">
+        <div class="newsletter__inner">
+          <div>
+            <div class="section__tag">Exclusivo</div>
+            <h2 class="newsletter__title">CADASTRE-SE<br>E <em>GANHE</em></h2>
+            <p class="newsletter__desc">Receba novidades, lançamentos exclusivos e cupons de desconto diretamente no seu e-mail. Faça parte da família Legend.</p>
+          </div>
+          <form class="newsletter__form" id="newsletter-form" novalidate>
+            <div class="newsletter__row">
+              <input type="email" class="newsletter__input" placeholder="Seu melhor e-mail" required aria-label="Email">
+              <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </div>
+            <p class="newsletter__note">Sem spam. Cancele quando quiser. Seus dados estão protegidos.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__logo">LEGEND<span class="logo-dot"></span></div>
+          <p class="footer__about">Marca brasileira de roupas fitness criada por atletas. Nossa missão é potencializar sua performance com produtos de qualidade premium.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="TikTok">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 12a4 4 0 104 4V4a5 5 0 005 5"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/>
+                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Políticas</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Termos e Condições</a></li>
+            <li><a href="#" class="footer__link">Política de Privacidade</a></li>
+            <li><a href="#" class="footer__link">Trocas e Devoluções</a></li>
+            <li><a href="#" class="footer__link">Frete e Entrega</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Links Rápidos</h3>
+          <ul class="footer__links">
+            <li><a href="./pages/about.html" class="footer__link">Sobre a Legend</a></li>
+            <li><a href="./pages/contact.html" class="footer__link">Contato</a></li>
+            <li><a href="#" class="footer__link">Minha Conta</a></li>
+            <li><a href="#" class="footer__link">Rastreio de Pedido</a></li>
+            <li><a href="#" class="footer__link">Afiliados Legend</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Contato</h3>
+          <div class="footer__contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            contato@legendfitness.com.br
+          </div>
+          <div class="footer__contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8"/>
+            </svg>
+            (11) 99234-5576
+          </div>
+          <div class="footer__contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+            São Paulo – SP, Brasil
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2025 <a href="./index.html">Legend Fitness</a>. Todos os direitos reservados.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Termos de Uso</a>
+          <a href="#">Privacidade</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-container" aria-live="polite"></div>
+  <script type="module" src="./script.js"></script>
+</body>
+</html>

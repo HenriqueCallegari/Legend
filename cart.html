@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEGEND — Legend Fitness</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body data-page="cart">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="./index.html" class="header__logo">LEGEND<span class="logo-dot"></span></a>
+        <nav class="nav">
+          <a href="./index.html">Início</a>
+          <a href="./index.html#produtos">Produtos</a>
+          <a href="./pages/about.html">Sobre</a>
+          <a href="./pages/contact.html">Contato</a>
+        </nav>
+        <div class="header__actions">
+          <a href="./cart.html" class="btn-icon active" aria-label="Carrinho">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 001.99 1.61h9.72a2 2 0 001.99-1.61L23 6H6"/>
+            </svg>
+            <span class="cart-badge">0</span>
+          </a>
+          <button class="header__hamburger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-menu">
+    <div class="mobile-menu__links">
+      <a href="./index.html">Início</a>
+      <a href="./index.html#produtos">Produtos</a>
+      <a href="./cart.html">Carrinho</a>
+      <a href="./pages/about.html">Sobre</a>
+      <a href="./pages/contact.html">Contato</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="container">
+      <nav class="page-header__breadcrumb" aria-label="Navegação estrutural">
+        <a href="./index.html">Início</a>
+        <span>›</span>
+        <span>Carrinho</span>
+      </nav>
+      <h1 class="page-header__title">MEU <span style="color:var(--accent)">CARRINHO</span></h1>
+    </div>
+  </div>
+
+  <!-- CART CONTENT -->
+  <main class="cart-page" aria-label="Conteúdo do carrinho">
+    <div class="container">
+      <div class="cart-layout">
+
+        <!-- Cart Items -->
+        <div>
+          <div id="cart-items" aria-label="Itens do carrinho">
+            <!-- Rendered by JS -->
+          </div>
+          <div style="display:flex;gap:12px;margin-top:24px;flex-wrap:wrap">
+            <a href="./index.html#produtos" class="btn btn-outline">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px">
+                <line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>
+              </svg>
+              Continuar Comprando
+            </a>
+            <button id="clear-cart" class="btn btn-ghost" style="color:var(--gray)">
+              Limpar Carrinho
+            </button>
+          </div>
+        </div>
+
+        <!-- Summary -->
+        <aside class="cart-summary" aria-label="Resumo do pedido">
+          <h2 class="cart-summary__title">RESUMO</h2>
+
+          <div class="cart-summary__row">
+            <span>Subtotal</span>
+            <span id="summary-subtotal">R$ 0,00</span>
+          </div>
+          <div class="cart-summary__row" id="summary-discount-row" style="display:none;color:var(--accent)">
+            <span>Desconto</span>
+            <span id="summary-discount" style="color:#22c55e">R$ 0,00</span>
+          </div>
+          <div class="cart-summary__row">
+            <span>Frete</span>
+            <span id="summary-shipping">R$ 0,00</span>
+          </div>
+
+          <div class="cart-summary__coupon">
+            <input
+              type="text"
+              id="coupon-input"
+              placeholder="Código do cupom"
+              aria-label="Código do cupom"
+              style="text-transform:uppercase"
+            >
+            <button id="apply-coupon" class="btn btn-dark btn-sm">Aplicar</button>
+          </div>
+
+          <div class="cart-summary__total">
+            <span class="cart-summary__total-label">Total</span>
+            <span class="cart-summary__total-value" id="summary-total">R$ 0,00</span>
+          </div>
+
+          <p style="font-size:0.78rem;color:var(--gray);margin-bottom:16px">
+            ✅ Frete grátis em compras acima de R$ 299,00
+          </p>
+
+          <div class="cart-summary__actions">
+            <button id="go-checkout" class="btn btn-primary btn-full btn-lg">
+              Finalizar Compra
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px">
+                <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </button>
+          </div>
+
+          <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-top:20px;opacity:0.5">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px">
+              <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/>
+            </svg>
+            <span style="font-size:0.75rem;color:var(--gray)">Pagamento seguro e criptografado</span>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom" style="border-top:1px solid rgba(255,255,255,0.06);padding:24px 0">
+        <p class="footer__copy">© 2025 <a href="./index.html">Legend Fitness</a>. Todos os direitos reservados.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Termos</a>
+          <a href="#">Privacidade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-container"></div>
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
