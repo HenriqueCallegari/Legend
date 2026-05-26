@@ -2,6 +2,8 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:dc2626&height=200&section=header&text=LEGEND&fontSize=72&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Performance%20Sem%20Limites&descAlignY=60&descSize=18" alt="header" />
 
+"ESTE REPOSITORIO É APENAS PARA TESTES"
+
 <br />
 
 <a href="https://github.com/HenriqueCallegari/Legend/stargazers">
